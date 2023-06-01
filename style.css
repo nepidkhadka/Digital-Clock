@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.9)) ,url(bg.jpg);
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: 8000px;
+}
+
+.maincontainer {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.center {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+}
+
+.center::before {
+  position: absolute;
+  content: "Digital Clock";
+  top: -280px;
+  font-size: 5rem;
+  font-weight: 600;
+  color: tomato;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.center .box {
+  width: 180px;
+  height: 180px;
+  background: whitesmoke;
+  border-radius: 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center p {
+  color: slategray;
+  font-size: 5rem;
+  font-weight: 600;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.center span {
+  font-size: 5rem;
+  color: aliceblue;
+}
