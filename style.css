@@ -21,7 +21,7 @@ body {
 
 .center {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   gap: 2rem;
   position: relative;
@@ -47,17 +47,23 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 1s ease-in-out;
 }
 
 .center p {
   color: slategray;
-  font-size: 5rem;
+  font-size: 6rem;
   font-weight: 600;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
 }
 
 .center span {
+  transition: 0.1s ease-in-out;
   font-size: 5rem;
   color: aliceblue;
+}
+
+.hide{
+  opacity: 0;
 }
