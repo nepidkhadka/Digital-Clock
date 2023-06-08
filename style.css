@@ -90,7 +90,22 @@ body {
 
   .center::before {
     text-align: center;
-    top: -220px;
+    top: -170px;
     font-size: 4rem;
+  }
+}
+
+
+@media (min-width: 768px) {
+
+    .center::before {
+    top: -200px;
+  }
+}
+
+@media (min-width: 1024px) {
+
+    .center::before {
+    top: -220px;
   }
 }
